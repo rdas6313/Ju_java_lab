@@ -17,9 +17,9 @@ class Student{
 		System.out.println("Score: "+this.score);
 	}
 	public void copy(Student obj){
-		obj.setName(name);
-		obj.setRoll(roll);
-		obj.setScore(score);
+		this.roll = obj.roll;
+		this.name = obj.name;
+		this.score = obj.score;
 	}
 }
 
@@ -32,7 +32,7 @@ class q7{
 		stu.display();
 		System.out.println("------Another student----------");
 		Student stud = new Student();
-		stu.copy(stud);
+		stud.copy(stu);
 		stud.display();
 		
 	}
